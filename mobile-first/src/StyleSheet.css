@@ -1,0 +1,71 @@
+/* Variable Declaration starts From here*/
+/* Mixins starts From here*/
+
+html, body, #root, .wrapper, .bg-back {
+  height: 100%;
+  margin: 0px; }
+
+.bg-back {
+  background: url("components/img/home-background.jpg") no-repeat}
+
+.search-component {
+  height: 172px; }
+
+.search-types {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  border: 1px solid #adb5bd85;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 12px;
+  width: 95px;
+  height: 24px;
+  margin-right: 1px;
+  font-size: 12px }
+
+.dark-bg {
+  background-color: #000; }
+
+.demoForm {
+	width: 500px;
+  margin: auto; }
+  
+.cursor-pointer {
+  cursor: pointer; }
+  
+.cursor-disabled {
+  cursor: not-allowed; }
+
+.wrapper {
+  margin: 0;
+  transition: margin .5s;
+  transform: .5s ease; }
+
+.navOpen {
+  margin-left: 240px; }
+
+.ui.thin.left.sidebar, .ui.thin.right.sidebar {
+  width: 240px !important; }
+
+.text-shadow {
+  text-shadow: -1px 2px 1px #000;
+  white-space: pre-wrap; }
+
+.pointerEvent {
+  pointer-events: none;
+  cursor: not-allowed; }
+
+.login-bg {
+  background: url("components/img/login-bg.jpg") no-repeat }
+
+.search-box {
+  border: 1px solid #d4d4d5;
+  height: 35px;
+  padding: 14px; }
+
+.card-font {
+  font-family: cursive; }
+
+/*# sourceMappingURL=StyleSheet.css.map */

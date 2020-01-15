@@ -1,0 +1,98 @@
+/* Variable Declaration starts From here*/
+
+/* Mixins starts From here*/
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin back-color($col_name) {
+    background-color: $col_name;
+}
+
+@mixin text-color($col_name) {
+    color: $col_name;
+}
+
+@mixin text-size($size) {
+    font-size: $size;
+}
+
+@mixin font-weightage($wt) {
+    font-weight: $wt;
+}
+
+@mixin radius-border($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.search-component {
+    @include size(null, 172px);
+}
+
+.search-types {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    border: 1px solid #adb5bd85;
+    @include radius-border(2px);
+    @include size(121px, 39px);
+}
+
+.dark-bg {
+    @include back-color(#000);
+}
+
+.demoForm {
+    margin: auto; 
+    @include size(500px, null);
+}
+
+.cursor-pointer {
+    cursor: pointer; 
+}
+
+.cursor-disabled {
+    cursor: not-allowed; 
+}
+
+.wrapper {
+    margin: 0;
+    transition: margin .5s;
+    transform: .5s ease; 
+}
+
+.navOpen {
+    margin-left: 240px; 
+}
+
+.ui.thin.left.sidebar, .ui.thin.right.sidebar {
+    width: 240px !important; 
+}
+
+.text-shadow {
+    text-shadow: -1px 2px 1px #000;
+    white-space: pre-wrap; 
+}
+
+.pointerEvent {
+    pointer-events: none;
+    cursor: not-allowed; 
+}
+
+.login-bg {
+    background: url("components/img/login-bg.jpg") no-repeat 
+}
+
+.search-box {
+    border: 1px solid #d4d4d5;
+    padding: 14px; 
+    @include size(null, 35px);
+}
+
+.card-font {
+    font-family: cursive; 
+}
